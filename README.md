@@ -27,6 +27,16 @@ This project is a simple RESTful API built using Node.js and Express for managin
 
 ---
 
+### Project Structure
+REST-User-API/  
+            ├── screenshots
+            ├── index.js
+            ├── package.json
+            ├── package-lock.json
+            ├── .gitignore
+            └── README.md
+
+
 ## Project Setup
 
 ### 1. Clone or download the project
