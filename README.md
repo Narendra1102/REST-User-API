@@ -92,11 +92,11 @@ Status: 200 OK / 404 Not Found
 
 
 ## HTTP Status Codes Used
-200 – OK
-201 – Created
-400 – Bad Request
-404 – Not Found
-500 – Internal Server Error
+
+### 200 – OK
+### 400 – Bad Request
+### 404 – Not Found
+### 500 – Internal Server Error
 
 
 ## Testing
