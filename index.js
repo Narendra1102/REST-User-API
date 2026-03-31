@@ -10,7 +10,7 @@ const PORT = 3000;
 // Middleware to parse JSON body
 app.use(express.json());
 
-const users=[
+let users=[
     {
         "id": "1",
         "firstName": "Anshika",
@@ -59,7 +59,7 @@ app.get("/users",(req,res)=>{
 //Fetch details of a specific user by ID
 app.get("/users/:id",(req,res)=>{
     const userId=req.params.id
-    const user=users.find((book)=>book.id==userId)
+    const user=users.find((user)=>user.id==userId)
     if(!user){
         return res.status(404).json({message:"User not found"})
     }
@@ -101,7 +101,8 @@ app.delete("/user/:id",(req,res)=>{
         return res.status(404).json({message:"User not found"})
     }
     const filteredUsers=users.filter(user=>userId!=user.id)
-    res.send(filteredUsers)
+    users=[...filteredUsers]
+    res.send(users)
 })
 
 //Error level middleware
